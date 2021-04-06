@@ -17,19 +17,20 @@ a {
 }
 
 .navbar_logo {
-    font-size: 40px;
+    font-size: 60px;
     color: black;
 }
 
 .navbar_logo i{
     color: #997000;
+    font-size: 50px;
 }
 
 .navbar_menu {
     display: flex;
     list-style: none;
     padding-left: 0;
-    font-size: 25px;
+    font-size: 33px;
 }
 
 .navbar_menu li {
@@ -45,6 +46,7 @@ a {
 .navbar_icons {
     list-style: none;
     color: #997000;
+    font-size: 30px;
     display: flex;
     padding-left: 0;
 }
@@ -73,28 +75,84 @@ header{
 .info_section{
     display: flex;
     justify-content: space-around;
+    margin: 0 80px;
 }
 
 .info_section .site_info{
-    width: 30%;
-    padding: 50px 50px;
+    width: 20%;
+    padding: 50px 25px;
+}
+
+.info_section .site_info .site_name{
+    font-size: 40px;
 }
 
 .info_section .site_info .site_description{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .info_section .section_intro{
-    width: 70%;
+    width: 80%;
     padding: 50px 30px;
 }
 
 .info_section .section_intro .intro_theme{
-    font-size: 100px;
+    font-size: 70px;
 }
 
 .info_section .section_intro .intro_text{
-    font-size: 90px;
+    font-size: 60px;
+}
+
+.kakaofriends{
+    display: none;
+}
+
+.mainmenu_section{
+    margin: 0 80px;
+}
+
+.mainmenu_section .menu_title h1{
+    color: #997000;
+    font-size: 45px;
+    padding: 0px 25px;
+    width: 100%;
+}
+
+.mainmenu{
+    display: flex;
+    width: 100%;
+}
+
+.mainmenu .mainmenu1{
+    justify-content: space-between;
+    width: 50%;
+    display: flex;
+    padding: 0 25px;
+}
+
+.mainmenu .mainmenu2{
+    justify-content: space-between;
+    width: 50%;
+    display: flex;
+    padding: 0 25px;
+}
+
+.mainmenu_name{
+    font-size: 30px;
+    width: 70%;
+}
+
+.mainmenu_name p{
+    font-family: '맑은 고딕';
+    font-size: 12px;
+    color: #999;
+}
+
+.mainmenu_price{
+    font-size: 30px;
+    width: 30%;
+    color: #CC723D;
 }
 
 hr{
@@ -109,6 +167,16 @@ hr{
         flex-direction: column;
         align-items: flex-start;
         padding: 8px 24px;
+    }
+
+    .navbar_logo {
+        font-size: 45px;
+        color: black;
+    }
+
+    .navbar_logo i{
+        font-size: 35px;
+        color: #997000;
     }
 
     .navbar_menu {
@@ -141,23 +209,44 @@ hr{
         display: flex;
     }
 
+    .info_section{
+        margin: 0;
+    }
+
     .info_section .site_info{
         width: 30%;
-        padding: 25px 25px;
+        padding: 50px 25px;
     }
 
     .info_section .section_intro{
         width: 70%;
         padding: 50px 15px;
     }
+
+    .info_section .site_info .site_name{
+        font-size: 30px;
+    }
+    
+    .info_section .site_info .site_description{
+        font-size: 15px;
+    }
     
     .info_section .section_intro .intro_theme{
-        font-size: 35px;
+        font-size: 30px;
         color: #997000;
     }
 
     .info_section .section_intro .intro_text{
         font-size: 25px;
+    }
+
+    .kakaofriends{
+        width: 50%;
+        display: block;
+    }
+
+    .mainmenu_section{
+        margin: 0;
     }
 
     .mainmenu_section .menu_title h1{
@@ -167,6 +256,25 @@ hr{
         width: 100%;
     }
 
+    .mainmenu{
+        display: block;
+        width: 100%;
+    }
+
+    .mainmenu .mainmenu1{
+        justify-content: space-between;
+        width: 100%;
+        display: flex;
+        padding: 0 25px;
+    }
+    
+    .mainmenu .mainmenu2{
+        justify-content: space-between;
+        width: 100%;
+        display: flex;
+        padding: 30px 25px;
+    }
+
     .mainmenu .mainmenu1{
         justify-content: space-between;
         width: 100%;
@@ -174,13 +282,17 @@ hr{
         padding: 0 25px;
     }
 
-    .mainmenu .mainmenu1 .mainmenu_name{
-        font-size: 30px;
+    .mainmenu_name{
+        font-size: 20px;
         width: 70%;
     }
 
-    .mainmenu .mainmenu1 .mainmenu_price{
-        font-size: 30px;
+    .mainmenu_name p{
+        font-size: 10px;
+    }
+
+    .mainmenu_price{
+        font-size: 20px;
         width: 30%;
         color: #CC723D;
     }
