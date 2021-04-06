@@ -97,6 +97,13 @@ header{
     font-size: 90px;
 }
 
+hr{
+    background-color: #EAEAEA;
+    height: 5px;
+    border: 0;
+    
+}
+
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
