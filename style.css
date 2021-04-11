@@ -573,7 +573,7 @@ hr{
         transition: all 0.2s linear;
     }
     
-    .hover_effect:hover :active .mainmenu_img {
+    .hover_effect:hover .mainmenu_img {
         -webkit-transform: scale(1.1,1.1);
         -moz-transform: scale(1.1,1.1);
         -o-transform: scale(1.1,1.1);
@@ -581,14 +581,14 @@ hr{
         transform: scale(1.1,1.1);
     }
     
-    .hover_effect:hover :active .hover_effect_caption {
+    .hover_effect:hover .hover_effect_caption {
         -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
         filter: alpha(opacity=100);
         opacity: 1;
     }
     
-    .hover_effect:hover :active .caption_title,
-    .hover_effect:hover :active .caption_desc {
+    .hover_effect:hover .caption_title,
+    .hover_effect:hover .caption_desc {
         -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
         filter: alpha(opacity=100);
         opacity: 1;
@@ -599,7 +599,7 @@ hr{
         transform: translateY(0px);
     }
     
-    .hover_effect:hover :active .caption_desc {
+    .hover_effect:hover .caption_desc {
         -webkit-transition-delay: 0.1s;
         -moz-transition-delay: 0.1s;
         -o-transition-delay: 0.1s;
