@@ -479,6 +479,59 @@ footer{
     background-color: #faa473;
 }
 
+/*info.html*/
+.store_infomation_section{
+    margin: 0 80px;
+}
+
+.store_infomation_section .store_infomation_title h1{
+    color: #997000;
+    font-size: 45px;
+    padding: 0px 25px;
+    width: 100%;
+}
+
+.store_infomation_section .store_infomation{
+    width: 80%;
+    display: flex;
+}
+
+.store_infomation .store_infomation_img{
+    width: 60%;
+    padding-left: 3%;
+}
+
+.hover_effect .store_infomation_images{
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.hover_effect:hover .store_infomation_images {
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}
+
+.store_infomation .store_infomation_text{
+    width: 40%;
+    padding-left: 10%;
+}
+
+.store_infomation .store_infomation_text p{
+    font-size: 30px;
+}
+
+.store_infomation_images{
+    width: 100%;
+    height: auto;
+}
+
+
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -821,6 +874,22 @@ footer{
         background: #fff;
         box-sizing: initial;
     }
+    .hover_effect .exterior_img{
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    
+    .hover_effect:hover .exterior_img {
+        -webkit-transform: scale(1.1,1.1);
+        -moz-transform: scale(1.1,1.1);
+        -o-transform: scale(1.1,1.1);
+        -ms-transform: scale(1.1,1.1);
+        transform: scale(1.1,1.1);
+    }
+
     /*찾아오시는 길*/
     .deractions_section{
         margin: 0;
@@ -893,5 +962,57 @@ footer{
         font-size: 10px;
         font-family: '맑은 고딕';
         background-color: #faa473;
+    }
+    /*info.html*/
+    .store_infomation_section{
+        margin: 0 80px;
+    }
+    
+    .store_infomation_section .store_infomation_title h1{
+        color: #997000;
+        font-size: 45px;
+        padding: 0px 25px;
+        width: 80%;
+    }
+    
+    .store_infomation_section .store_infomation{
+        width: 80%;
+        display: block;
+    }
+    
+    .store_infomation .store_infomation_img{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .hover_effect .store_infomation_images{
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    
+    .hover_effect:hover .store_infomation_images {
+        -webkit-transform: scale(1.1,1.1);
+        -moz-transform: scale(1.1,1.1);
+        -o-transform: scale(1.1,1.1);
+        -ms-transform: scale(1.1,1.1);
+        transform: scale(1.1,1.1);
+    }
+    
+    .store_infomation .store_infomation_text{
+        width: 100%;
+    }
+    
+    .store_infomation .store_infomation_text p{
+        font-size: 20px;
+    }
+    
+    .store_infomation_images{
+        width: 100%;
+        height: auto;
+        padding-left: 30px;
     }
 }
