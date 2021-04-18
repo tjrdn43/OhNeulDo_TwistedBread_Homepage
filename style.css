@@ -103,7 +103,7 @@ header{
 .info_section .section_intro .intro_text{
     font-size: 60px;
 }
-
+/*메뉴 가격표 section*/
 .mainmenu_section{
     margin: 0 80px;
 }
@@ -157,7 +157,7 @@ hr{
     border: 0;
     
 }
-
+/*메뉴 사진 section*/
 .mainmenu_img_section{
     margin: 0 80px;
 }
@@ -330,6 +330,153 @@ hr{
 
 .mainmenu_img_name{
     font-size: 30px;
+}
+
+/*가게 사진 및 세트 사진 */
+.exterior_img_section{
+    margin: 0 80px;
+}
+
+.exterior_img_section .exterior_img_title h1{
+    color: #997000;
+    font-size: 45px;
+    padding: 0px 25px;
+    width: 100%;
+}
+
+.exterior_img_section1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.exterior_img_section2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.exterior_img_section3{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.exterior_img_box{
+    width: 410px;
+    height: auto;
+    margin: 10px;
+    border: 10px solid #EAEAEA;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+    -moz-box-shadow: 1px 1px 2px #e6e6e6;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff;
+    box-sizing: initial;
+}
+
+.exterior_img_box .exterior_img{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.hover_effect .exterior_img{
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.hover_effect:hover .exterior_img {
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}
+
+.exterior_images{
+    width: 100%;
+    height: auto;
+}
+/*찾아오시는 길*/
+.deractions_section{
+    margin: 0 80px;
+}
+
+.deractions_section .deractions_title h1{
+    color: #997000;
+    font-size: 45px;
+    padding: 0px 25px;
+    width: 100%;
+}
+
+.deractions_section .directions_google_map{
+    text-align: center;
+    width: 100%;
+}
+
+.deractions_section .directions_google_map iframe{
+    width: 80%;
+    height: 450px;
+}
+
+.hours_of_operation{
+    margin: 30px 0;
+    padding: 40px 0;
+    width: 100%;
+    height: 300px;
+}
+
+.hours_of_operation .hours_of_operation_title{
+    padding-left: 20%;
+}
+
+.hours_of_operation .hours_of_operation_table{
+    width: 60%;
+    height: 300px;
+    font-size: 20px;
+    font-family: '맑은 고딕';
+}
+
+.hours_of_operation .hours_of_operation_table th{
+    width: 20%;
+    padding-right: 10%;
+    color: #999;
+}
+
+.hours_of_operation .phone_number_title{
+    padding-left: 20%;
+}
+
+.hours_of_operation .phone_number_table{
+    width: 60%;
+    height: auto;
+    font-size: 20px;
+    font-family: '맑은 고딕';
+}
+
+.hours_of_operation .phone_number_table th{
+    width: 20%;
+    padding-right: 10%;
+    color: #999;
+}
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    font-family: '맑은 고딕';
+    background-color: #faa473;
 }
 
 @media screen and (max-width: 768px) {
@@ -631,5 +778,120 @@ hr{
     
     .mainmenu_img_name{
         font-size: 45px;
+    }
+    /*가게 사진 및 세트 사진*/
+    .exterior_img_section{
+        margin: 0;
+    }
+    
+    .exterior_img_section .exterior_img_title h1{
+        color: #997000;
+        font-size: 45px;
+        padding: 0px 25px;
+        width: 80%;
+    }
+
+    .exterior_img_section1{
+        display: block;
+        width: 100%;
+    }
+    
+    .exterior_img_section2{
+        display: block;
+        width: 100%;
+    }
+    
+    .exterior_img_section3{
+        display: block;
+        width: 100%;
+    }
+
+    .exterior_img_box{
+        width: 380px;
+        height: auto;
+        margin: 10px auto;
+        border: 10px solid #EAEAEA;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+        -moz-box-shadow: 1px 1px 2px #e6e6e6;
+        box-shadow: 1px 1px 2px #e6e6e6;
+        cursor: default;
+        background: #fff;
+        box-sizing: initial;
+    }
+    /*찾아오시는 길*/
+    .deractions_section{
+        margin: 0;
+    }
+    
+    .deractions_section .deractions_title h1{
+        color: #997000;
+        font-size: 45px;
+        padding: 0px 25px;
+        width: 80%;
+    }
+    
+    .deractions_section .directions_google_map{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .deractions_section .directions_google_map iframe{
+        width: 80%;
+        height: 250px;
+    }
+    
+    .hours_of_operation{
+        padding: 20px 0;
+        width: 100%;
+        height: 300px;
+    }
+
+    .hours_of_operation .hours_of_operation_title{
+        padding-left: 10%;
+    }
+    
+    .hours_of_operation .hours_of_operation_table{
+        width: 80%;
+        height: 300px;
+        font-size: 15px;
+        font-family: '맑은 고딕';
+    }
+    
+    .hours_of_operation .hours_of_operation_table th{
+        width: 40%;
+        padding-right: 10%;
+        color: #999;
+    }
+
+    .hours_of_operation .phone_number_title{
+        padding-left: 10%;
+    }
+    
+    .hours_of_operation .phone_number_table{
+        width: 60%;
+        height: auto;
+        font-size: 15px;
+        font-family: '맑은 고딕';
+    }
+    
+    .hours_of_operation .phone_number_table th{
+        width: 25%;
+        padding-right: 10%;
+        color: #999;
+    }
+
+    footer{
+        margin-top: 50px;
+        float: left;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 10px;
+        font-family: '맑은 고딕';
+        background-color: #faa473;
     }
 }
