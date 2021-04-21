@@ -617,6 +617,14 @@ footer{
     font-size: 30px;
 }
 
+/*store_image.html*/
+.store_image_section .store_image_title h1{
+    color: #997000;
+    font-size: 80px;
+    padding: 0px 25px;
+    width: 100%;
+}
+
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -1121,18 +1129,26 @@ footer{
         color: #997000;
         font-size: 45px;
         padding: 0px 25px;
-        width: 100%;
+        width: 60%;
     }
     
     .store_menu_section .store_menu_box1{
         display: block;
-        width: 100%;
+        width: 80%;
         padding-left: 5%;
     }
     
     .store_menu_section .store_menu_box2{
         display: block;
-        width: 100%;
+        width: 80%;
         padding-left: 5%;
+    }
+
+    /*store_image.html*/
+    .store_image_section .store_image_title h1{
+        color: #997000;
+        font-size: 45px;
+        padding: 0px 25px;
+        width: 60%;
     }
 }
