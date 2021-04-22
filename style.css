@@ -410,23 +410,23 @@ hr{
     height: auto;
 }
 /*찾아오시는 길*/
-.deractions_section{
+.diractions_section{
     margin: 0 80px;
 }
 
-.deractions_section .deractions_title h1{
+.diractions_section .diractions_title h1{
     color: #997000;
     font-size: 80px;
     padding: 0px 25px;
     width: 100%;
 }
 
-.deractions_section .directions_google_map{
+.diractions_section .directions_google_map{
     text-align: center;
     width: 100%;
 }
 
-.deractions_section .directions_google_map iframe{
+.diractions_section .directions_google_map iframe{
     width: 80%;
     height: 450px;
 }
@@ -506,11 +506,11 @@ footer{
 }
 
 .hover_effect .store_infomation_images{
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    transition: all 0.1s linear;
 }
 
 .hover_effect:hover .store_infomation_images {
@@ -618,6 +618,10 @@ footer{
 }
 
 /*store_image.html*/
+.store_image_section{
+    margin: 0 80px;
+}
+
 .store_image_section .store_image_title h1{
     color: #997000;
     font-size: 80px;
@@ -1145,10 +1149,31 @@ footer{
     }
 
     /*store_image.html*/
+    .store_image_section{
+        margin: 0;
+    }
+
     .store_image_section .store_image_title h1{
         color: #997000;
         font-size: 45px;
         padding: 0px 25px;
         width: 60%;
+    }
+
+    /*directions.html*/
+    .diractions_section{
+        margin: 0;
+    }
+
+    .diractions_section .diractions_title h1{
+        color: #997000;
+        font-size: 45px;
+        padding: 0px 25px;
+        width: 60%;
+    }
+
+    .diractions_section .directions_google_map iframe{
+        width: 80%;
+        height: 300px;
     }
 }
