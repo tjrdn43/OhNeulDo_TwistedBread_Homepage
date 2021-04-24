@@ -17,13 +17,13 @@ a {
 }
 
 .navbar_logo {
-    font-size: 60px;
+    font-size: 50px;
     color: black;
 }
 
 .navbar_logo i{
     color: #997000;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .navbar_menu {
@@ -34,15 +34,18 @@ a {
 }
 
 .navbar_menu li {
-    padding: 8px 30px;
+    text-align: center;
+    padding: 8px 10px;
     margin: 0 15px;
+    width: 120px;
+    word-break : nowrap;
 }
 
 .navbar_menu li:hover {
     background-color: #997000;
     border-radius: 4px;
-
 }
+
 .navbar_icons {
     list-style: none;
     color: #997000;
@@ -76,6 +79,7 @@ header{
     height: 700px;
 }
 
+/*사이트 소개 section */
 .info_section{
     display: flex;
     justify-content: space-around;
@@ -88,7 +92,8 @@ header{
 }
 
 .info_section .site_info .site_name{
-    font-size: 40px;
+    font-size: 38px;
+    width: 135px;
 }
 
 .info_section .site_info .site_description{
@@ -102,17 +107,19 @@ header{
 
 .info_section .section_intro .intro_theme{
     font-size: 70px;
+    color: #997000;
 }
 
 .info_section .section_intro .intro_text{
-    font-size: 60px;
+    font-size: 55px;
+    width: 750px;
 }
 /*메뉴 가격표 section*/
 .mainmenu_section{
     margin: 0 80px;
 }
 
-.mainmenu_section .menu_title h1{
+.title h1{
     color: #997000;
     font-size: 80px;
     padding: 0px 25px;
@@ -166,13 +173,6 @@ hr{
     margin: 0 80px;
 }
 
-.mainmenu_img_section .menu_img_title h1{
-    color: #997000;
-    font-size: 80px;
-    padding: 0px 25px;
-    width: 100%;
-}
-
 .mainmenu_img_section1{
     display: flex;
     width: 100%;
@@ -218,7 +218,6 @@ hr{
     display: block;
     position: relative;
     width: 100%;
-    height: 400px;
 }
 
 .mainmenu_img_box .caption_title{
@@ -253,6 +252,8 @@ hr{
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     opacity: 0;
+    width: 100%;
+    height: 430px;
     background-color: rgba(219,127,8, 0.7);
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -341,13 +342,6 @@ hr{
     margin: 0 80px;
 }
 
-.exterior_img_section .exterior_img_title h1{
-    color: #997000;
-    font-size: 80px;
-    padding: 0px 25px;
-    width: 100%;
-}
-
 .exterior_img_section1{
     display: flex;
     width: 100%;
@@ -412,13 +406,6 @@ hr{
 /*찾아오시는 길*/
 .diractions_section{
     margin: 0 80px;
-}
-
-.diractions_section .diractions_title h1{
-    color: #997000;
-    font-size: 80px;
-    padding: 0px 25px;
-    width: 100%;
 }
 
 .diractions_section .directions_google_map{
@@ -488,13 +475,6 @@ footer{
     margin: 0 80px;
 }
 
-.store_infomation_section .store_infomation_title h1{
-    color: #997000;
-    font-size: 80px;
-    padding: 0px 25px;
-    width: 100%;
-}
-
 .store_infomation_section .store_infomation{
     width: 100%;
     display: flex;
@@ -543,13 +523,6 @@ footer{
 /*menu.html*/
 .store_menu_section{
     margin: 0 80px;
-}
-
-.store_menu_section .store_menu_title h1{
-    color: #997000;
-    font-size: 80px;
-    padding: 0px 25px;
-    width: 100%;
 }
 
 .store_menu_section .store_menu_box1{
@@ -622,13 +595,6 @@ footer{
     margin: 0 80px;
 }
 
-.store_image_section .store_image_title h1{
-    color: #997000;
-    font-size: 80px;
-    padding: 0px 25px;
-    width: 100%;
-}
-
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -663,6 +629,11 @@ footer{
         text-align: center;
     }
 
+    .navbar_menu li:hover {
+        background-color: rgba(190, 124, 0, 0.5);
+        border-radius: 4px;
+    }
+
     .navbar_icons {
         display: none;
         justify-content: center;
@@ -685,6 +656,14 @@ footer{
         width: 100%;
         height: auto;
     }
+
+    .title h1{
+        color: #997000;
+        font-size: 45px;
+        padding: 0px 25px;
+        width: 60%;
+    }
+
 
     /*소개 section */
 
@@ -717,19 +696,12 @@ footer{
 
     .info_section .section_intro .intro_text{
         font-size: 25px;
+        width: 300px;
     }
 
     /*메뉴의 이름, 가격 section */
-
     .mainmenu_section{
         margin: 0;
-    }
-
-    .mainmenu_section .menu_title h1{
-        color: #997000;
-        font-size: 45px;
-        padding: 0px 25px;
-        width: 80%;
     }
 
     .mainmenu{
@@ -770,13 +742,6 @@ footer{
     /*메뉴 사진 section */
     .mainmenu_img_section{
         margin: 0;
-    }
-    
-    .mainmenu_img_section .menu_img_title h1{
-        color: #997000;
-        font-size: 45px;
-        padding: 0px 25px;
-        width: 80%;
     }
     
     .mainmenu_img_section1{
@@ -938,13 +903,6 @@ footer{
     .exterior_img_section{
         margin: 0;
     }
-    
-    .exterior_img_section .exterior_img_title h1{
-        color: #997000;
-        font-size: 45px;
-        padding: 0px 25px;
-        width: 80%;
-    }
 
     .exterior_img_section1{
         display: block;
@@ -995,13 +953,6 @@ footer{
     /*찾아오시는 길*/
     .deractions_section{
         margin: 0;
-    }
-    
-    .deractions_section .deractions_title h1{
-        color: #997000;
-        font-size: 45px;
-        padding: 0px 25px;
-        width: 80%;
     }
     
     .deractions_section .directions_google_map{
@@ -1070,13 +1021,6 @@ footer{
         margin: 0;
     }
     
-    .store_infomation_section .store_infomation_title h1{
-        color: #997000;
-        font-size: 45px;
-        padding: 0px 25px;
-        width: 80%;
-    }
-    
     .store_infomation_section .store_infomation{
         width: 80%;
         display: block;
@@ -1128,13 +1072,6 @@ footer{
     .store_menu_section{
         margin: 0;
     }
-
-    .store_menu_section .store_menu_title h1{
-        color: #997000;
-        font-size: 45px;
-        padding: 0px 25px;
-        width: 60%;
-    }
     
     .store_menu_section .store_menu_box1{
         display: block;
@@ -1153,27 +1090,195 @@ footer{
         margin: 0;
     }
 
-    .store_image_section .store_image_title h1{
-        color: #997000;
-        font-size: 45px;
-        padding: 0px 25px;
-        width: 60%;
-    }
-
     /*directions.html*/
     .diractions_section{
         margin: 0;
     }
 
-    .diractions_section .diractions_title h1{
-        color: #997000;
-        font-size: 45px;
-        padding: 0px 25px;
-        width: 60%;
-    }
-
     .diractions_section .directions_google_map iframe{
         width: 80%;
         height: 300px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .navbar_logo {
+        font-size: 30px;
+        color: black;
+    }
+    .navbar_logo i{
+        font-size: 30px;
+    }
+    .navbar_menu li{
+        padding: 8px 0;
+        margin: 0 8px;
+        font-size: 20px;
+        width: 80px;
+    }
+    .header_img img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .info_section .section_intro .intro_theme{
+        font-size: 50px;
+        color: #997000;
+    }
+
+    .info_section .section_intro .intro_text{
+        font-size: 45px;
+        width: 500px;
+    }
+
+    .mainmenu_img_section1{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mainmenu_img_section2{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mainmenu_img_box{
+        margin: 0 20%;
+    }
+
+    .deractions_section{
+        margin: 0;
+    }
+    
+    .deractions_section .directions_google_map{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .deractions_section .directions_google_map iframe{
+        width: 80%;
+        height: 250px;
+    }
+    
+    .hours_of_operation{
+        padding: 20px 0;
+        width: 100%;
+        height: 300px;
+    }
+
+    .hours_of_operation .hours_of_operation_title{
+        padding-left: 10%;
+    }
+    
+    .hours_of_operation .hours_of_operation_table{
+        width: 80%;
+        height: 300px;
+        font-size: 15px;
+        font-family: '맑은 고딕';
+    }
+    
+    .hours_of_operation .hours_of_operation_table th{
+        width: 40%;
+        padding-right: 10%;
+        color: #999;
+    }
+
+    .hours_of_operation .phone_number_title{
+        padding-left: 10%;
+    }
+    
+    .hours_of_operation .phone_number_table{
+        width: 60%;
+        height: auto;
+        font-size: 15px;
+        font-family: '맑은 고딕';
+    }
+    
+    .hours_of_operation .phone_number_table th{
+        width: 25%;
+        padding-right: 10%;
+        color: #999;
+    }
+
+    .hours_of_operation .hours_of_operation_title{
+        padding-left: 10%;
+    }
+    
+    .hours_of_operation .hours_of_operation_table th{
+        width: 40%;
+        padding-right: 10%;
+        color: #999;
+    }
+    
+    .hours_of_operation .phone_number_title{
+        padding-left: 10%;
+    }
+
+    footer{
+        margin-top: 50px;
+        float: left;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 10px;
+        font-family: '맑은 고딕';
+        background-color: #faa473;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1224px){
+    .navbar_logo {
+        font-size: 40px;
+        color: black;
+    }
+    .navbar_logo i{
+        font-size: 30px;
+    }
+
+    .navbar_menu li{
+        padding: 8px 0;
+        margin: 0 10px;
+        font-size: 30px;
+    }
+
+    .header_img img{
+        width: 100%;
+        height: 500px;
+    }
+
+    .mainmenu_img_section1{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mainmenu_img_section2{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mainmenu_img_box{
+        margin: 0 25%;
+    }
+    
+    .hours_of_operation .hours_of_operation_table th{
+        width: 40%;
+        padding-right: 10%;
+        color: #999;
+    }
+
+    footer{
+        margin-top: 50px;
+        float: left;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 10px;
+        font-family: '맑은 고딕';
+        background-color: #faa473;
     }
 }
